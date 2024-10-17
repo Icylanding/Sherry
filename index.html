@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><u>Sherry的暗黑生活</u></title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+       .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding-bottom: 50px;
+        }
+       .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+       .header h1 {
+            margin-top: 0;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+       .footer {
+            text-align: center;
+            clear: both;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+        /* Interactive part */
+       .interactive {
+            margin-top: 20px;
+        }
+       .interactive button {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+       .interactive button:hover {
+            background-color: #0056b3;
+        }
+       .result {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><u>Sherry的暗黑生活</u></h1>
+            <h2><u>October 16th Biology Experiment</u></h2>
+        </div>
+        <p><u>Objective: To investigate the effect of salt concentration on the mass of potato cores through osmosis</u></p>
+        <img src="1.jpeg" alt="Place each potato core in the labeled test tubes containing the different salt concentrations">
+        <p><u>Place each potato core in the labeled test tubes containing the different salt concentrations</u></p>
+        <img src="2.jpeg" alt="Measure their mass again">
+        <p><u>Measure their mass again</u></p>
+        <div class="interactive">
+            <button onclick="showResult()">Show Result</button>
+            <div class="result" id="result"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <p><u>Created by Amy</u></p>
+    </div>
+    <script>
+        function showResult() {
+            document.getElementById("result").innerHTML = "The experiment shows that the potato cores in the salt concentrations had a significant change in mass due to osmosis.";
+        }
+    </script>
+</body>
+</html>
